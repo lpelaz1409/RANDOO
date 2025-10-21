@@ -21,7 +21,7 @@ a{
 }
 
 header{
-    height: 1000px;  
+    height: 800px;  
     background-image: url("dba03cd57f76c08af1e51ac7f85322b3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,5 +39,5 @@ header{
     @include titre;
     margin-right: 400px;
     margin-left: 400px;
-    margin-top: 500px;
+    margin-top: 300px;
 }
