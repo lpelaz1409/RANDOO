@@ -1,12 +1,16 @@
 @import "./variable";
-
+*{
+    margin: 0;
+}
 ul{
     @include cadretitre;
     gap: 30px;
-    margin-right: 250px;
-    margin-left: 250px;
+    margin-right: 200px;
+    margin-left: 200px;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-right: 40px;
+
 }
 
 li{
@@ -27,7 +31,6 @@ header{
     background-size: cover;
     background-position: center;
     padding :40px;
-
 }
 
 .img{
@@ -37,7 +40,64 @@ header{
 .titre{
     @include cadretitre;
     @include titre;
+    display: flex;
+    align-items: center;
     margin-right: 400px;
     margin-left: 400px;
     margin-top: 300px;
+    padding: 20px;
+}
+
+.corp{
+    height: 2700px;  
+    background-image: url("./_\ \(34\).jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.partie1{
+    display: flex;
+    flex-direction: column;
+}
+
+.titre1 {
+    @include titreh2;
+
+}
+
+.paragraphe1{
+   @include paragraphe;
+}
+
+.texte1{
+    @include bloctexte;
+}
+
+.titre2{
+    @include titreh2;
+}
+
+.paragraphe2{
+    @include paragraphe;
+}
+
+.texte2{
+    @include bloctexte;
+}
+
+.titre3{
+    @include titreh2;
+}
+
+.paragraphe3{
+    @include bloctexte;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.galerie{
+    display: flex;
+    justify-content: center;
 }
