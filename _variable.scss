@@ -4,6 +4,7 @@ $color :rgb(255, 255, 255);
     color: $color;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 @mixin texte(){
@@ -49,3 +50,15 @@ $color :rgb(255, 255, 255);
         text-align: center;
     }
 }
+
+@mixin tablette {
+    @media screen and (max-width: 1024px) {
+      @content;
+    }
+  }
+  
+  @mixin mobile {
+    @media screen and (max-width: 600px) {
+      @content;
+    }
+  }
