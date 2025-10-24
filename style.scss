@@ -2,6 +2,10 @@
 *{
     margin: 0;
 }
+
+.nav{
+    display: flex;
+}
 ul{
     @include cadretitre;
     gap: 30px;
@@ -100,4 +104,9 @@ header{
 .galerie{
     display: flex;
     justify-content: center;
+}
+
+.block3{
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
