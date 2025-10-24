@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+.nav {
+  display: flex;
+}
+
 ul {
   display: flex;
   justify-content: center;
@@ -200,4 +204,9 @@ header {
 .galerie {
   display: flex;
   justify-content: center;
+}
+
+.block3 {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }/*# sourceMappingURL=style.css.map */
