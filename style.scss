@@ -67,6 +67,43 @@ header{
     width: 100%;
 }
 
+
+.banderole {
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.276);
+  @include texte;
+  padding: 10px 0;
+  backdrop-filter: blur(10px);
+  position: relative;
+  white-space: nowrap;
+}
+
+.texte-defilant {
+  display: inline-block;
+  animation: defilement-infini 20s linear infinite;
+}
+
+.texte-defilant span {
+  display: inline-block;
+  padding-right: 50px; 
+  font-size: 18px;
+}
+
+@keyframes defilement-infini {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.banderole:hover .texte-defilant {
+  animation-play-state: paused;
+}
+
+
 .titre{
     @include cadretitre;
     @include titre;
@@ -170,6 +207,9 @@ footer{
 
 }
 
+img {
+  @include zoom;
+}
 
 
 
@@ -339,4 +379,61 @@ footer{
       padding: 10px;
     }
 }
+
+
+@include tablette {
+  footer {
+    padding: 40px 20px;
+  }
+
+  .navfooter ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .navfooter a {
+    font-size: 18px;
+  }
+
+  .logofooter img {
+    width: 120px;
+  }
+}
+
+
+@include mobile {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .logofooter {
+    margin: 10px 0;
+  }
+
+  .logofooter img {
+    width: 100px;
+  }
+
+  .navfooter ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0;
+  }
+
+  .navfooter a {
+    font-size: 16px;
+    display: block;
+  }
+
+  .navfooter:last-child ul li {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
 
