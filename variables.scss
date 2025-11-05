@@ -1,0 +1,94 @@
+$color :rgb(255, 255, 255);
+
+
+@mixin titre(){
+    color: $color;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@mixin cadretitre() {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.276);
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    
+    
+}
+
+@mixin boiteinfo() {
+
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.276);
+    border-radius: 30px;
+    backdrop-filter: blur(10px); 
+    height: 451px;
+    width: 200px;
+    text-align: center;
+    align-content: center;
+
+
+}
+
+@mixin boiteinfo2() {
+
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.276);
+    border-radius: 30px;
+    backdrop-filter: blur(10px); 
+    height: 451px;
+    width: 451px;
+    text-align: center;
+    align-content: center;
+
+
+}
+
+@mixin boiteinfo3() {
+
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.276);
+    border-radius: 30px;
+    backdrop-filter: blur(10px); 
+    height: 451px;
+    width: 630px;
+    text-align: center;
+    align-content: center;
+
+
+}
+
+@mixin bloctexte(){
+    @include texte;
+    @include cadretitre;
+    padding: 60px 80px 60px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    p{
+        text-align: center;
+    }
+}
+
+
+@mixin texte(){
+    color: $color;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+@mixin titreh2(){
+    @include cadretitre;
+    @include titre;
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-top: 50px;
+    padding: 20px;
+    
+}
